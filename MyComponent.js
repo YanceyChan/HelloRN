@@ -8,7 +8,7 @@ import {
 export default class MyComponent extends Component {
     render () {
         return(
-            <View>
+            <View style={styles.mainView}>
                 <Text style={styles.componentText}>MyComponent</Text>
                 <MySubComponent/>
             </View>
@@ -25,6 +25,9 @@ class MySubComponent extends Component {
 }
 
 const styles = StyleSheet.create({
+    mainView : {
+        backgroundColor: '#ddd1aa'
+    },
     componentText : {
         textAlign: 'center',
         color: 'blue',
@@ -33,7 +36,7 @@ const styles = StyleSheet.create({
     },
     subComponentText : {
         fontSize: 18,
-        color: '#55ddd9',
+        color: '#b466dd',
         textAlign: 'center'
     }
 

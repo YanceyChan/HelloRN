@@ -7,6 +7,7 @@ import {
 } from 'react-native';
 
 import MyComponent from './MyComponent';
+import MyComponentProp from './MyConmponetProp';
 
 // var textStyle = {color: '#ffd32f', fontSize: 18};
 
@@ -15,10 +16,8 @@ export default class HelloRN extends Component {
         return (
             <View style={styles.mainView}>
                 <Text style={styles.centerText}>你好！RN</Text>
-                <Text style={styles.testText}>
-                    测试排版
-                </Text>
                 <MyComponent/>
+                <MyComponentProp/>
             </View>
         );
     }
@@ -26,13 +25,16 @@ export default class HelloRN extends Component {
 
 const styles = StyleSheet.create({
     mainView: {
-       flex: 1,
-       justifyContent: 'center',
-       alignItems: 'center'
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        // backgroundColor: 'black',
     } ,
     centerText: {
-        color: '#ffd32f',
-        fontSize: 18
+        color: '#ff8401',
+        fontSize: 28,
+        fontWeight: 'bold',
+
     },
     testText: {
         backgroundColor: 'black',
