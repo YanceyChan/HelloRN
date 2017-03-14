@@ -6,20 +6,40 @@ import {
     View,
     TextInput,
     ListView,
+    Navigator,
 
 } from 'react-native';
 
 import MyComponent from './MyComponent';
 import MyComponentProp from './MyConmponetProp';
 import MyFlexTest from './MyFlexTest.js';
+import MyScene from './MyScene'
 
 // var textStyle = {color: '#ffd32f', fontSize: 18};
 
 export default class HelloRN extends Component {
     render() {
         return (
-            <View style={styles.mainView}>
-            </View>
+            <Navigator style={{justifyContent: 'center', marginTop: 20}}
+                       initialRoute={{title: 'My Initial Scene', index: 0}}
+                       configureScene={(route) => {
+                           return Navigator.SceneConfigs.VerticalDownSwipeJump;
+                       }}
+                       renderScene={(route, navigator) => {
+                    return <MyScene title = {route.title}
+                                    onForward={() => {
+                                        const nextIndex = route.index + 1;
+                                        navigator.push({
+                                            title: 'Scene ' + nextIndex,
+                                            index: nextIndex,
+                                        });
+                                    }}
+                                    onBack={() => {
+                                        if (route.index > 0) {
+                                            navigator.pop();
+                                        }
+                                    }}/>
+            }}/>
         );
     }
 }
