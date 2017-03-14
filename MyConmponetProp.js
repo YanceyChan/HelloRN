@@ -20,11 +20,13 @@ export default class MyComponentProp extends Component {
         super(props);
         this.state = {
             show : true,
+            countInt : 0,
         };
 
         setInterval(() => {
             this.setState({
-                show : !this.state.show
+                show : !this.state.show,
+                countInt: !this.state.show? this.state.countInt + 1:'',
             })
         }, 500)
     }
@@ -34,7 +36,7 @@ export default class MyComponentProp extends Component {
         return(
             <View style={styles.mainView}>
                 <Text style={styles.componentText}>{myText}</Text>
-
+                <Text style={styles.componentText}>{this.state.countInt}</Text>
             </View>
         );
     }
