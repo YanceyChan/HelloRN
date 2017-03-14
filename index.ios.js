@@ -6,6 +6,8 @@ import {
     View
 } from 'react-native';
 
+import MyComponent from './MyComponent';
+
 // var textStyle = {color: '#ffd32f', fontSize: 18};
 
 export default class HelloRN extends Component {
@@ -16,6 +18,7 @@ export default class HelloRN extends Component {
                 <Text style={styles.testText}>
                     测试排版
                 </Text>
+                <MyComponent/>
             </View>
         );
     }
@@ -34,8 +37,8 @@ const styles = StyleSheet.create({
     testText: {
         backgroundColor: 'black',
         textDecorationStyle: 'solid',
-        color: 'white'
-        fontSize:
+        color: 'white',
+        fontSize: 24,
     }
 
 });
