@@ -1,47 +1,45 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
+    AppRegistry,
+    StyleSheet,
+    Text,
+    View
 } from 'react-native';
 
+// var textStyle = {color: '#ffd32f', fontSize: 18};
+
 export default class HelloRN extends Component {
-  render() {
-    return (
-        <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-            <Text>
-            你好！
-            </Text>
-        </View>
-    );
-  }
+    render() {
+        return (
+            <View style={styles.mainView}>
+                <Text style={styles.centerText}>你好！RN</Text>
+                <Text style={styles.testText}>
+                    测试排版
+                </Text>
+            </View>
+        );
+    }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+    mainView: {
+       flex: 1,
+       justifyContent: 'center',
+       alignItems: 'center'
+    } ,
+    centerText: {
+        color: '#ffd32f',
+        fontSize: 18
+    },
+    testText: {
+        backgroundColor: 'black',
+        textDecorationStyle: 'solid',
+        color: 'white'
+        fontSize:
+    }
 
 });
+
+
 
 AppRegistry.registerComponent('HelloRN', () => HelloRN);
