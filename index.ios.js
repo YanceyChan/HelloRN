@@ -17,7 +17,8 @@ export default class HelloRN extends Component {
             <View style={styles.mainView}>
                 <Text style={styles.centerText}>你好！RN</Text>
                 <MyComponent/>
-                <MyComponentProp/>
+                <MyComponentProp showText= 'showText1'/>
+                <MyComponentProp showText= 'showText2'/>
             </View>
         );
     }
