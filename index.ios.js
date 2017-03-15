@@ -19,7 +19,7 @@ import TestView from './resource/TestView'
 export default class HelloRN extends Component {
     render() {
         return(
-            <TestView textContent='测试'></TestView>
+            <TestView textContent='dfdfdfdfdf测试'></TestView>
         );
     }
 }

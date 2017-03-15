@@ -16,7 +16,7 @@ export default class testView extends Component {
     render() {
         return(
             <View style={myStyles.myView}>
-                <Text style={myStyles.myText}>{this.props.textContent}</Text>
+                <Text style={myStyles.myText} allowFontScaling={true} numberOfLines={3}>{this.props.textContent}</Text>
             </View>
         );
     }
@@ -33,6 +33,7 @@ const myStyles = StyleSheet.create({
         fontSize: 36,
         color: '#ffffff',
         textAlign: 'center',
+
         // fontWeight: 400,
     }
 
