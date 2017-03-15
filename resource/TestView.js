@@ -45,7 +45,23 @@ export default class testView extends Component {
                                                     <View style={{flex: 1, backgroundColor: 'green'}}></View>
                                                     <View style={{flex: 4, backgroundColor: 'yellow', marginBottom: 5}}>
                                                         <View style={{flex: 2, backgroundColor: 'green'}}></View>
-                                                        <View style={{flex: 3, backgroundColor: '#45ffec'}}></View>
+                                                        <View style={{flex: 3, backgroundColor: '#45ffec',
+                                                            flexDirection: 'row'}}>
+                                                            <View style={{flex: 7, backgroundColor: '#45ffec',
+                                                                marginLeft: 5, marginTop: 3, }}>
+                                                                <View style={{flex: 2, backgroundColor: '#45ffec',
+                                                                    flexDirection: 'row'}}>
+                                                                    <View style={{flex: 1, backgroundColor: 'green'}}></View>
+                                                                    <View style={{flex: 10, backgroundColor: '#45ffec',
+                                                                        marginRight: 5}}>
+                                                                        <View style={{flex: 1, backgroundColor: 'green'}}></View>
+                                                                        <View style={{flex: 1, backgroundColor: '#45ffec'}}></View>
+                                                                    </View>
+                                                                </View>
+                                                                <View style={{flex: 2, backgroundColor: 'green',}}></View>
+                                                            </View>
+                                                            <View style={{flex: 1, backgroundColor: 'green'}}></View>
+                                                        </View>
                                                     </View>
                                                 </View>
                                                 <View style={{flex: 1, backgroundColor: 'green',}}></View>
