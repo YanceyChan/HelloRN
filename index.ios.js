@@ -13,35 +13,46 @@ import MyComponent from './MyComponent';
 import MyComponentProp from './MyConmponetProp';
 import MyFlexTest from './MyFlexTest.js';
 import MyScene from './MyScene'
-
+import test from './resource/test'
 // var textStyle = {color: '#ffd32f', fontSize: 18};
 
 export default class HelloRN extends Component {
     render() {
-        return (
-            <Navigator style={{justifyContent: 'center', marginTop: 20}}
-                       initialRoute={{title: 'My Initial Scene', index: 0}}
-                       configureScene={(route) => {
-                           return Navigator.SceneConfigs.VerticalDownSwipeJump;
-                       }}
-                       renderScene={(route, navigator) => {
-                    return <MyScene title = {route.title}
-                                    onForward={() => {
-                                        const nextIndex = route.index + 1;
-                                        navigator.push({
-                                            title: '第' + nextIndex + '页',
-                                            index: nextIndex,
-                                        });
-                                    }}
-                                    onBack={() => {
-                                        if (route.index > 0) {
-                                            navigator.pop();
-                                        }
-                                    }}/>
-            }}/>
+        return(
+            <View style={{flex: 1,backgroundColor: 'red'}}>
+                
+            </View>
         );
-    };
-};
+    }
+}
+
+//导航
+// export default class HelloRN extends Component {
+//     render() {
+//         return (
+//             <Navigator style={{justifyContent: 'center', marginTop: 20}}
+//                        initialRoute={{title: 'My Initial Scene', index: 0}}
+//                        configureScene={(route) => {
+//                            return Navigator.SceneConfigs.VerticalDownSwipeJump;
+//                        }}
+//                        renderScene={(route, navigator) => {
+//                     return <MyScene title = {route.title}
+//                                     onForward={() => {
+//                                         const nextIndex = route.index + 1;
+//                                         navigator.push({
+//                                             title: '第' + nextIndex + '页',
+//                                             index: nextIndex,
+//                                         });
+//                                     }}
+//                                     onBack={() => {
+//                                         if (route.index > 0) {
+//                                             navigator.pop();
+//                                         }
+//                                     }}/>
+//             }}/>
+//         );
+//     };
+// };
 
 //ListView
 // class ListViewBasics extends Component {
