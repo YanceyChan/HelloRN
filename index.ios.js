@@ -7,7 +7,6 @@ import {
     TextInput,
     ListView,
     Navigator,
-
 } from 'react-native';
 
 import MyComponent from './MyComponent';
@@ -30,7 +29,7 @@ export default class HelloRN extends Component {
                                     onForward={() => {
                                         const nextIndex = route.index + 1;
                                         navigator.push({
-                                            title: 'Scene ' + nextIndex,
+                                            title: '第' + nextIndex + '页',
                                             index: nextIndex,
                                         });
                                     }}
@@ -41,8 +40,8 @@ export default class HelloRN extends Component {
                                     }}/>
             }}/>
         );
-    }
-}
+    };
+};
 
 //ListView
 // class ListViewBasics extends Component {

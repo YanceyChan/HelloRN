@@ -13,7 +13,7 @@ export default class MyComponent extends Component {
                 <MySubComponent/>
             </View>
         );
-    }
+    };
 }
 
 class MySubComponent extends Component {
@@ -21,7 +21,7 @@ class MySubComponent extends Component {
         return (
             <Text style={styles.subComponentText}>subComponent</Text>
         );
-    }
+    };
 }
 
 const styles = StyleSheet.create({

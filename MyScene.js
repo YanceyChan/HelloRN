@@ -19,7 +19,7 @@ export default class MyScene extends Component {
     render() {
       return(
         <View>
-            <Text>Hi! My name is {this.props.title}</Text>
+            <Text>{this.props.title}</Text>
             <TouchableHighlight onPress={this.props.onForward}>
                 <Text>进入下一页</Text>
             </TouchableHighlight>
