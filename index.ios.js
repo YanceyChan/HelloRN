@@ -9,12 +9,16 @@ import {
     Navigator,
 } from 'react-native';
 
+
+import TestScrollView from './resource/TestScrollView'
 import MyComponent from './MyComponent';
 import MyComponentProp from './MyConmponetProp';
 import MyFlexTest from './MyFlexTest.js';
 import MyScene from './MyScene'
 import TestView from './resource/TestView'
 import TestImage from './resource/TestImage'
+
+
 // var textStyle = {color: '#ffd32f', fontSize: 18};
 
 export default class HelloRN extends Component {
@@ -22,7 +26,7 @@ export default class HelloRN extends Component {
     render() {
         console.log('testBreak!');
         return(
-            <TestView textContent="lslsl"/>
+            <TestScrollView/>
 
         );
     }
