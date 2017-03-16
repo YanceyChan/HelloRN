@@ -11,14 +11,8 @@ import {
 
 
 import TestScrollView from './resource/TestScrollView'
-import MyComponent from './MyComponent';
-import MyComponentProp from './MyConmponetProp';
-import MyFlexTest from './MyFlexTest.js';
-import MyScene from './MyScene'
-import TestView from './resource/TestView'
-import TestImage from './resource/TestImage'
-
-
+import TestSwitch from './resource/TestSwitch'
+import TestTemplate from './resource/TestTemplate'
 // var textStyle = {color: '#ffd32f', fontSize: 18};
 
 export default class HelloRN extends Component {
@@ -26,8 +20,7 @@ export default class HelloRN extends Component {
     render() {
         console.log('testBreak!');
         return(
-            <TestScrollView/>
-
+            <TestTemplate/>
         );
     }
 }
