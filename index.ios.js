@@ -18,9 +18,12 @@ import TestImage from './resource/TestImage'
 // var textStyle = {color: '#ffd32f', fontSize: 18};
 
 export default class HelloRN extends Component {
+
     render() {
+        console.log('testBreak!');
         return(
             <TestView textContent="lslsl"/>
+
         );
     }
 }

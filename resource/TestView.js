@@ -13,11 +13,17 @@ export default class testView extends Component {
     static propTypes = {
         textContent: React.PropTypes.string.isRequired,
     }
+
+
+
     render() {
         return(
             <View style={myStyles.myView}>
-                <Text style={myStyles.myText} allowFontScaling={true} numberOfLines={3}>{this.props.textContent}</Text>
-                
+                <Text style={myStyles.myText}
+                      allowFontScaling={true}
+                      numberOfLines={3}>{this.props.textContent}
+                      </Text>
+
             </View>
         );
     }
