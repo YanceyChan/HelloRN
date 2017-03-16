@@ -10,7 +10,6 @@ import {
 } from 'react-native';
 
 
-import TestScrollView from './resource/TestScrollView'
 import TestSwitch from './resource/TestSwitch'
 import TestTemplate from './resource/TestTemplate'
 // var textStyle = {color: '#ffd32f', fontSize: 18};
@@ -20,7 +19,7 @@ export default class HelloRN extends Component {
     render() {
         console.log('testBreak!');
         return(
-            <TestTemplate/>
+            <TestSwitch/>
         );
     }
 }
