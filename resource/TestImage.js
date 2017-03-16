@@ -6,7 +6,7 @@ import {
     Image,
 } from 'react-native';
 
-export default class TestView2 extends Component{
+export default class TestImage extends Component{
     render() {
         return(
             <View style={myStyles.mainView}>

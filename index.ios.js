@@ -14,14 +14,13 @@ import MyComponentProp from './MyConmponetProp';
 import MyFlexTest from './MyFlexTest.js';
 import MyScene from './MyScene'
 import TestView from './resource/TestView'
-import TestView2 from './resource/TestView2'
+import TestImage from './resource/TestImage'
 // var textStyle = {color: '#ffd32f', fontSize: 18};
 
 export default class HelloRN extends Component {
     render() {
         return(
-
-            <TestView2/>
+            <TestView textContent="lslsl"/>
         );
     }
 }

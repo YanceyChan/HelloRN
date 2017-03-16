@@ -3,7 +3,6 @@ import {
     View,
     Text,
     StyleSheet,
-    Image,
 } from 'react-native';
 
 export default class testView extends Component {
@@ -18,10 +17,7 @@ export default class testView extends Component {
         return(
             <View style={myStyles.myView}>
                 <Text style={myStyles.myText} allowFontScaling={true} numberOfLines={3}>{this.props.textContent}</Text>
-                <Text>加载本地图片</Text>
-                <Image source={require('../image/sky.jpg')}/>
-                <Text>加载app图片</Text>
-                <Text>加载网络图片</Text>
+                
             </View>
         );
     }
