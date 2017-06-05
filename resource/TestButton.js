@@ -10,7 +10,6 @@ export default class TestSwitch extends Component{
     render(){
         return(
             <View style={styles.container}>
-                
             </View>
         );
     }
@@ -19,7 +18,7 @@ export default class TestSwitch extends Component{
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#999',
+        backgroundColor: '#992c37',
         justifyContent: 'center',
         alignItems: 'center',
     }
